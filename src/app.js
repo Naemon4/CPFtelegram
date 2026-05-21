@@ -6,7 +6,7 @@ const ValidarCpf = require("/.botbervice")
   // ─────────────────────────────────────────────
 
   const TelegramBot = require("node-telegram-bot-api");
-  const { validarCPF } = require("./BotService");
+  const { validarCPF } = require("./botservice");
 
   // ── Configuração ──────────────────────────────
   // Substitua pelo token que o @BotFather te enviou
