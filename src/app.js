@@ -9,7 +9,7 @@ const { validarCPF } = require("./BotService");
 
 // ── Configuração ──────────────────────────────
 // Substitua pelo token que o @BotFather te enviou
-const TOKEN = "SEU_TOKEN_AQUI";
+const TOKEN = "796825520:AAGrxPv1WAPMOhEcjiTK1onJidfJrSOP4ns";
 
 // polling: o bot fica perguntando ao Telegram se chegou mensagem nova
 const bot = new TelegramBot(TOKEN, { polling: true });
