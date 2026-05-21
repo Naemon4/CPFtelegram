@@ -1,7 +1,8 @@
 require('dotenv').config();
 const TelegramBot = require("node-telegram-bot-api")
-//const ValidarCpf = require("/.BotService") adicionar linha dps que for feito o service// 
-function validarcpf () {
+const ValidarCpf = require("/.BotService") 
+// //adicionar linha dps que for feito o service// 
+
   // ─────────────────────────────────────────────
 
   const TelegramBot = require("node-telegram-bot-api");
@@ -127,4 +128,4 @@ function validarcpf () {
     console.error("Erro de polling:", err.message);
   });
 
-  console.log("🤖 Bot iniciado! Aguardando mensagens...");}
+  console.log("🤖 Bot iniciado! Aguardando mensagens...");
