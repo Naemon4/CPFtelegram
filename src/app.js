@@ -1,11 +1,11 @@
 require('dotenv').config();
 const TelegramBot = require("node-telegram-bot-api")
-const ValidarCpf = require("/.botbervice") 
+
 // //adicionar linha dps que for feito o service// 
 
   // ─────────────────────────────────────────────
 
-  const TelegramBot = require("node-telegram-bot-api");
+
   const { validarCPF } = require("./botservice");
 
   // ── Configuração ──────────────────────────────
