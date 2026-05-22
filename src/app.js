@@ -10,7 +10,7 @@ const TelegramBot = require("node-telegram-bot-api")
 
   // ── Configuração ──────────────────────────────
   // Substitua pelo token que o @BotFather te enviou
-  const TOKEN = "796825520:AAGrxPv1WAPMOhEcjiTK1onJidfJrSOP4ns";
+  const TOKEN = "7968275520:AAGrxPv1WAPMOhEcjiTK1onJidfJrSOP4ns";
 
   // polling: o bot fica perguntando ao Telegram se chegou mensagem nova
   const bot = new TelegramBot(TOKEN, { polling: true });
