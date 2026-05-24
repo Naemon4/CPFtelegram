@@ -32,7 +32,7 @@ bot.onText(/\/start/, (msg) => {
     msg.chat.id,
     `Olá, *${nome}*! 👋\n\n` +
     `Eu valido CPFs usando o *Algoritmo Módulo 11* da Receita Federal.\n\n` +
-    `Digite */validar* para começar, ou envie um CPF diretamente.` +
+    `Digite */validar* para começar, \n` +
     `Ou envie diretamente o CPF em qualquer formato: \n` +
     `  \`111.111.111-00\`\n` +
     `  \`11111111100\`\n\n` +
