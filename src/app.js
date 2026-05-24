@@ -32,7 +32,14 @@ bot.onText(/\/start/, (msg) => {
     msg.chat.id,
     `Olá, *${nome}*! 👋\n\n` +
     `Eu valido CPFs usando o *Algoritmo Módulo 11* da Receita Federal.\n\n` +
-    `Digite */validar* para começar, ou envie um CPF diretamente.`,
+    `Digite */validar* para começar, ou envie um CPF diretamente.` +
+    `Ou envie diretamente o CPF em qualquer formato: \n` +
+    `  \`111.111.111-00\`\n` +
+    `  \`11111111100\`\n\n` +
+    `*Comandos disponíveis:*\n` +
+    `/start — boas-vindas\n` +
+    `/validar — iniciar validação\n` +
+    `/ajuda — mensagem de ajuda`,
     { parse_mode: "Markdown" }
   );
 });
@@ -43,8 +50,8 @@ bot.onText(/\/ajuda/, (msg) => {
     `*Como usar:*\n\n` +
     `• Digite */validar* e envie o CPF quando solicitado\n` +
     `• Ou envie o CPF diretamente, em qualquer formato:\n` +
-    `  \`529.982.247-25\`\n` +
-    `  \`52998224725\`\n\n` +
+    `  \`111.111.111-00\`\n` +
+    `  \`11111111100\`\n\n` +
     `*Comandos disponíveis:*\n` +
     `/start — boas-vindas\n` +
     `/validar — iniciar validação\n` +
@@ -58,7 +65,7 @@ bot.onText(/\/validar/, (msg) => {
   estadoUsuario[chatId] = "aguardando_cpf";
   bot.sendMessage(
     chatId,
-    `🔍 *Validar CPF*\n\nDigite o CPF que deseja verificar:`,
+    `🔍 *Validar CPF*\n\nPor favor, digite o CPF que deseja verificar:`,
     { parse_mode: "Markdown" }
   );
 });
